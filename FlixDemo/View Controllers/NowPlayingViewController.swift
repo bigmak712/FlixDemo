@@ -80,11 +80,20 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
-        
+
         let posterPathString = movie["poster_path"] as! String
         let posterURL = URL(string: BASE_URL + posterPathString)!
         cell.posterImageView.af_setImage(withURL: posterURL)
-        
+ 
         return cell 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell) {
+            let movie = movies[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.movie = movie
+        }
     }
 }

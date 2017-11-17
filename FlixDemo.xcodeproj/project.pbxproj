@@ -14,6 +14,7 @@
 		C98F8F971FBCFBED0043090B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98F8F951FBCFBED0043090B /* LaunchScreen.storyboard */; };
 		C98F8F9F1FBD02280043090B /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F8F9E1FBD02280043090B /* NowPlayingViewController.swift */; };
 		C98F8FA11FBD13590043090B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F8FA01FBD13590043090B /* MovieCell.swift */; };
+		C9C5A00E1FBF61A5001475ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C5A00D1FBF61A5001475ED /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C98F8F981FBCFBED0043090B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C98F8F9E1FBD02280043090B /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		C98F8FA01FBD13590043090B /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		C9C5A00D1FBF61A5001475ED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +74,8 @@
 		C98F8F8B1FBCFBED0043090B /* FlixDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C98F8F9E1FBD02280043090B /* NowPlayingViewController.swift */,
-				C98F8FA01FBD13590043090B /* MovieCell.swift */,
+				C9C5A00C1FBF6184001475ED /* View Controllers */,
+				C9C5A00B1FBF616C001475ED /* Views */,
 				C98F8F8C1FBCFBED0043090B /* AppDelegate.swift */,
 				C98F8F901FBCFBED0043090B /* Main.storyboard */,
 				C98F8F931FBCFBED0043090B /* Assets.xcassets */,
@@ -81,6 +83,23 @@
 				C98F8F981FBCFBED0043090B /* Info.plist */,
 			);
 			path = FlixDemo;
+			sourceTree = "<group>";
+		};
+		C9C5A00B1FBF616C001475ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C98F8FA01FBD13590043090B /* MovieCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9C5A00C1FBF6184001475ED /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C98F8F9E1FBD02280043090B /* NowPlayingViewController.swift */,
+				C9C5A00D1FBF61A5001475ED /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		D4318F335986CC62D5C0A79C /* Frameworks */ = {
@@ -225,6 +244,7 @@
 				C98F8F9F1FBD02280043090B /* NowPlayingViewController.swift in Sources */,
 				C98F8F8D1FBCFBED0043090B /* AppDelegate.swift in Sources */,
 				C98F8FA11FBD13590043090B /* MovieCell.swift in Sources */,
+				C9C5A00E1FBF61A5001475ED /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
