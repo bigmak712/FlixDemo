@@ -15,6 +15,8 @@
 		C98F8F9F1FBD02280043090B /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F8F9E1FBD02280043090B /* NowPlayingViewController.swift */; };
 		C98F8FA11FBD13590043090B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98F8FA01FBD13590043090B /* MovieCell.swift */; };
 		C9C5A00E1FBF61A5001475ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C5A00D1FBF61A5001475ED /* DetailViewController.swift */; };
+		C9C5A0101FBF6EF5001475ED /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C5A00F1FBF6EF5001475ED /* PosterCell.swift */; };
+		C9C5A0121FBF6F52001475ED /* SuperheroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C5A0111FBF6F52001475ED /* SuperheroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C98F8F9E1FBD02280043090B /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		C98F8FA01FBD13590043090B /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		C9C5A00D1FBF61A5001475ED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C9C5A00F1FBF6EF5001475ED /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		C9C5A0111FBF6F52001475ED /* SuperheroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				C98F8FA01FBD13590043090B /* MovieCell.swift */,
+				C9C5A00F1FBF6EF5001475ED /* PosterCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			children = (
 				C98F8F9E1FBD02280043090B /* NowPlayingViewController.swift */,
 				C9C5A00D1FBF61A5001475ED /* DetailViewController.swift */,
+				C9C5A0111FBF6F52001475ED /* SuperheroViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -242,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98F8F9F1FBD02280043090B /* NowPlayingViewController.swift in Sources */,
+				C9C5A0101FBF6EF5001475ED /* PosterCell.swift in Sources */,
+				C9C5A0121FBF6F52001475ED /* SuperheroViewController.swift in Sources */,
 				C98F8F8D1FBCFBED0043090B /* AppDelegate.swift in Sources */,
 				C98F8FA11FBD13590043090B /* MovieCell.swift in Sources */,
 				C9C5A00E1FBF61A5001475ED /* DetailViewController.swift in Sources */,
