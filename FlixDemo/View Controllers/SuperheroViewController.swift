@@ -16,6 +16,9 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
     let BASE_URL = "https://image.tmdb.org/t/p/w500"
     let API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
     
+    // returns movies similar to Thor Ragnarok
+    let SUPERHERO_URL = "https://api.themoviedb.org/3/movie/284053/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US&page=1"
+    
     var movies: [[String: Any]] = []
     
     override func viewDidLoad() {
@@ -50,7 +53,7 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
     }
 
     func fetchMovies() {
-        let url = URL(string: MOVIE_URL + API_KEY)!
+        let url = URL(string: SUPERHERO_URL)!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
