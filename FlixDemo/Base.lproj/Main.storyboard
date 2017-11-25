@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-UJ-VGq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-UJ-VGq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="182" id="wSN-rP-nJZ" customClass="MovieCell" customModule="FlixDemo" customModuleProvider="target">
@@ -68,6 +67,13 @@
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cQC-UJ-VGq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D7o-WA-kDp"/>
+                            <constraint firstItem="cQC-UJ-VGq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jat-zg-rOo"/>
+                            <constraint firstAttribute="bottom" secondItem="cQC-UJ-VGq" secondAttribute="bottom" id="Rfr-2C-v7A"/>
+                            <constraint firstItem="cQC-UJ-VGq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UUR-el-323"/>
+                            <constraint firstItem="cQC-UJ-VGq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hbt-5T-btH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="0df-UA-7hr"/>
