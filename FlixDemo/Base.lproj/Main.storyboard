@@ -37,10 +37,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUd-NH-Wzl">
-                                                    <rect key="frame" x="8" y="0.0" width="100" height="171"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yUd-NH-Wzl">
+                                                    <rect key="frame" x="8" y="8" width="100" height="165.5"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="166" id="aqn-Gq-bYb"/>
+                                                        <constraint firstAttribute="width" constant="100" id="m3f-f2-sHX"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojl-4x-1x7">
                                                     <rect key="frame" x="116" y="0.0" width="251" height="21"/>
@@ -50,6 +53,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="yUd-NH-Wzl" secondAttribute="bottom" constant="8" id="1e3-bH-zfX"/>
+                                                <constraint firstItem="yUd-NH-Wzl" firstAttribute="top" secondItem="7tY-6E-AHG" secondAttribute="top" constant="8" id="IGp-kM-Ofa"/>
+                                                <constraint firstItem="yUd-NH-Wzl" firstAttribute="leading" secondItem="7tY-6E-AHG" secondAttribute="leading" constant="8" id="Sq7-hc-fyX"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="overviewLabel" destination="gik-Ff-5Y4" id="QTU-Z8-Qvn"/>
@@ -69,7 +77,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cQC-UJ-VGq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D7o-WA-kDp"/>
-                            <constraint firstItem="cQC-UJ-VGq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jat-zg-rOo"/>
                             <constraint firstAttribute="bottom" secondItem="cQC-UJ-VGq" secondAttribute="bottom" id="Rfr-2C-v7A"/>
                             <constraint firstItem="cQC-UJ-VGq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UUR-el-323"/>
                             <constraint firstItem="cQC-UJ-VGq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hbt-5T-btH"/>
