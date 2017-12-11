@@ -26,23 +26,19 @@ class DetailViewController: UIViewController {
     
     let BASE_URL = "https://image.tmdb.org/t/p/w500"
 
-    var movie: [String: Any]?
+    //var movie: [String: Any]?
+    var movie: Movie?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let movie = movie {
-            titleLabel.text = movie[MovieKeys.title] as? String
-            releaseDateLabel.text = movie[MovieKeys.releaseDate] as? String
-            overviewLabel.text = movie[MovieKeys.overview] as? String
+            titleLabel.text = movie.title
+            releaseDateLabel.text = movie.releaseDate
+            overviewLabel.text = movie.overview
             
-            let backdropPathString = movie[MovieKeys.backdropPath] as! String
-            let posterPathString = movie[MovieKeys.posterPath] as! String
-            
-            let backdropURL = URL(string: BASE_URL + backdropPathString)!
-            backDropImageView.af_setImage(withURL: backdropURL)
-            let posterPathURL = URL(string: BASE_URL + posterPathString)!
-            posterImageView.af_setImage(withURL: posterPathURL)
+            backDropImageView.af_setImage(withURL: movie.backdropUrl!)
+            posterImageView.af_setImage(withURL: movie.posterUrl!)
         }
     }
 
