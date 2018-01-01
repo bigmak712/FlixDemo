@@ -18,10 +18,6 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     var movies: [Movie] = []
     var refreshControl: UIRefreshControl!
     
-    let MOVIE_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key="
-    let BASE_URL = "https://image.tmdb.org/t/p/w500"
-    let API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,7 +43,10 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     
     func fetchMovies() {
         MovieApiManager().nowPlayingMovies { (movies: [Movie]?, error: Error?) in
-            if let movies = movies {
+            if error != nil {
+                self.displayNetworkError()
+            }
+            else if let movies = movies {
                 self.movies = movies
                 
                 // Reload the data into the tableView
@@ -57,6 +56,16 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
                 self.activityIndicator.stopAnimating()
             }
         }
+    }
+    
+    func displayNetworkError() {
+        let alertController = UIAlertController(title: "Cannot Get Movies", message: "The Internet connection appears to be offline.", preferredStyle: .alert)
+        let TRYAction = UIAlertAction(title: "Try Again", style: .default) { (action) in
+            self.fetchMovies()
+        }
+        
+        alertController.addAction(TRYAction)
+        present(alertController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
